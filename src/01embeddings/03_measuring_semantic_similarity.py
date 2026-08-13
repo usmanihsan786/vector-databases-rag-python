@@ -52,7 +52,6 @@ documents = [
 
 
 for doc in documents:
-
     response2 = client.embeddings.create(
     model=deployementName,
     input=doc
@@ -69,11 +68,10 @@ results.sort(
 
 for doc,score in results:
     print(f"{score:.3f} {doc}")
+
+
+
           
-
-
-
-
 # similarity = cosine_similarity(embedding1,embedding2)
 
 # print(len(embedding1))
@@ -83,3 +81,7 @@ for doc,score in results:
 # print(embedding2[:10])
 # print("---------------------------------------------")
 # print(similarity)
+
+
+
+
